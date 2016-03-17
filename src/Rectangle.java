@@ -10,7 +10,7 @@ public class Rectangle {
     private final double length;
     private final double width;
 
-    private Rectangle(double length, double width) {
+    protected Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }

@@ -12,24 +12,28 @@ public class RectangleTest {
 
     @Test
     public void rectangleOfNegativeLengthDoesNotExist() throws InvalidInputException {
+        thrown.expect(InvalidInputException.class);
         thrown.expectMessage("Expected: positive length\n" + "Actual: -3.0");
         Rectangle.createRectangle(-3, 4);
     }
 
     @Test
     public void rectangleOfZeroLengthDoesNotExist() throws InvalidInputException {
+        thrown.expect(InvalidInputException.class);
         thrown.expectMessage("Expected: positive length\n" + "Actual: 0.0");
         Rectangle.createRectangle(0, 4);
     }
 
     @Test
     public void rectangleOfNegativeWidthDoesNotExist() throws InvalidInputException {
+        thrown.expect(InvalidInputException.class);
         thrown.expectMessage("Expected: positive width\n" + "Actual: -4.0");
         Rectangle.createRectangle(3, -4);
     }
 
     @Test
     public void rectangleOfZeroWidthDoesNotExist() throws InvalidInputException {
+        thrown.expect(InvalidInputException.class);
         thrown.expectMessage("Expected: positive width\n" + "Actual: 0.0");
         Rectangle.createRectangle(3, 0);
     }
