@@ -1,9 +1,10 @@
+package shape;
+
 import exceptions.InvalidInputException;
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
-import static org.junit.Assert.assertEquals;
 
 public class RectangleTest {
 
@@ -41,13 +42,13 @@ public class RectangleTest {
     @Test
     public void areaOfRectangleOfPositiveSidesShouldGiveTheirMultiplication() throws InvalidInputException {
         Rectangle rectangle = Rectangle.createRectangle(3, 4);
-        assertEquals(12, rectangle.calculateArea(), 0);
+        Assert.assertEquals(12, rectangle.calculateArea(), 0);
     }
 
     @Test
     public void perimeterOfRectangleOfPositiveSidesShouldGiveDoubleOfTheirAddition() throws InvalidInputException {
         Rectangle rectangle = Rectangle.createRectangle(3.0, 4.0);
-        assertEquals(14, rectangle.calculatePerimeter(), 0);
+        Assert.assertEquals(14, rectangle.calculatePerimeter(), 0);
     }
 
 }
