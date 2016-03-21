@@ -5,8 +5,8 @@ Job of this enum -
 package compare;
 
 public enum UnitOfVolume implements Unit {
-    Litre(1),
-    Gallon(3.78);
+    LITRE(1),
+    GALLON(3.78);
 
     private double conversionFactor;
 
@@ -16,7 +16,7 @@ public enum UnitOfVolume implements Unit {
 
     @Override
     public Unit stdUnit() {
-        return Litre;
+        return LITRE;
     }
     @Override
     public double getInBase(double quantity) {

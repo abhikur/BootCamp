@@ -5,10 +5,10 @@ Job of this enum -
 package compare;
 
 public enum UnitOfLength implements Unit {
-    Feet(12),
-    Inch(1),
-    Cm(0.4),
-    Mm(0.04);
+    FEET(12),
+    INCH(1),
+    CM(0.4),
+    MM(0.04);
 
     private double conversionFactor;
 
@@ -17,7 +17,7 @@ public enum UnitOfLength implements Unit {
     }
     @Override
     public Unit stdUnit() {
-        return Inch;
+        return INCH;
     }
     @Override
     public double getInBase(double quantity) {
