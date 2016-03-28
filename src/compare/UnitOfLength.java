@@ -4,7 +4,7 @@ Job of this enum -
  */
 package compare;
 
-public enum UnitOfLength implements Unit {
+public enum UnitOfLength implements Unit{
     FEET(12),
     INCH(1),
     CM(0.4),
@@ -24,3 +24,4 @@ public enum UnitOfLength implements Unit {
         return conversionFactor * quantity;
     }
 }
+
